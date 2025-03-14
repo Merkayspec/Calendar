@@ -1,0 +1,103 @@
+
+body{
+    font-family: "Libre Baskerville", serif;
+    font-family: "Libre Baskerville", serif;
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: black;
+}
+
+.calendar_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header{
+ background-color: whitesmoke;
+ display: grid;
+ grid-template-columns: 5fr 1fr;
+ height: 70px;
+ width: 465px;
+ padding-top: 25px;
+ padding-left: 25px;
+ font-size: 30px;
+ font-weight: 900;
+ border-radius: 10px;
+ border: 2px solid blueviolet;
+ margin-bottom: 8px;
+
+}
+
+svg{
+ size: 50px;
+}
+
+.box{
+ background-color: whitesmoke;
+ display: grid;
+ gap: 10px;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ border-radius: 10px;
+ border: 2px solid blueviolet;
+ min-height: 50vh;
+ width: 450px;
+ padding:20px;
+}
+
+.march{
+ grid-column-start: 1;
+ grid-column-end: 8;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-bottom: 20px;
+ font-size: 20px;
+ font-weight: 500;
+}
+
+
+.numbers1{
+ grid-column-start: 1;
+}
+
+.numbers2{
+ color: rgb(109, 109, 109);
+}
+
+.numbers{
+ background-color: rgb(197, 174, 218);
+ border-radius: 4px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 25px;
+ font-weight: 550;
+
+}
+
+.numbers:hover{
+ background-color: blueviolet;
+}
+.day{
+ color: blueviolet;
+ font-weight: 750;
+ 
+ border-radius: 4px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 25px;
+ font-weight: 550;
+}
+
+@media (max-width: 480px) {
+ .datepicker {
+     width: 90%;
+ }
+}
+
